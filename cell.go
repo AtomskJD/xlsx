@@ -189,6 +189,10 @@ func (c *Cell) Type() CellType {
 	return c.cellType
 }
 
+func (c *Cell) SetStringType() {
+	c.cellType = CellTypeString
+}
+
 // SetString sets the value of a cell to a string.
 func (c *Cell) SetString(s string) {
 	c.updatable()
